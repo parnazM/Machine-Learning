@@ -1,5 +1,4 @@
 # Machine-Learning
-Unsupervised machine learning 
 Supervised learning infers a mapping function from a set example input–output pairs, which could be used for predicting the outcome for other inputs, whereas, unsupervised learning discovers the hidden structure within unlabelled training data for drawing meaningful conclusions.
 Clustering techniques such as HCA and k-means are associated with unsupervised machine-learning methods:
 
