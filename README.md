@@ -5,17 +5,19 @@ In Unsupervised approach, the machine learning algorithm takes as input only the
 
 Description of the R scripts
 ---------------
-1. preparing binary matrices and compute sil. number   
+**1. preparing binary matrices and computing sil. number**
+
 |R script | binary_matrix.R
 |------------ | -------------
 |Input data | http://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz  ??
-|Output data | compounds_genes matrix & compounds_plants matrix  
+|Output data | compounds_genes matrix & compounds_plants matrix
 |            | Silhouette number Table for HCA and Kmeans methods in different cluster numbers and distances
 |Package Dependencies | "xlsx" , "e1071"
 |Function Dependencies| mesh2name_functon.R , silhouette_functions.R
 |Summary | 
 ---------------
-2. visualizing HCA dendrogram   
+**2. visualizing HCA dendrogram**   
+
 |R script | HCA.R
 |------------ | -------------
 |Input data | mtgenes.RData , mtgenes_distances.RData , final_list.RData
@@ -23,10 +25,31 @@ Description of the R scripts
 |Package Dependencies | "cluster" , "ggplot2" , "factoextra"
 |Summary | 
 ----------------
-3. visualizing Kmeans plot  
+**3. visualizing Kmeans plot**
+
 |R script | Kmeans.R
 |------------ | -------------
 |Input data | mtgenes.RData , mtgenes_distances.RData , final_list.RData
 |Output data | Kmeans plot , compounds in each cluster in Kmeans method  
 |Package Dependencies | "ggplot2" , "factoextra" , "purrr" , "cluster"
 |Summary |
+---------------
+**4. finding best distance and dimensions in Kohonen method and visualizing plot**
+
+|R script | Kohonen.R
+|------------ | -------------
+|Input data | mtgenes.RData , final_list.RData
+|Output data | Kohonen plot , heatmap som , compounds in each cluster(cell) in Kohonen method  
+|Package Dependencies | "Kohonen" 
+|Function Dependencies| kohonen_silhouette_function.R
+|Summary |
+---------------
+**5. trying DBSCAN method for our data**
+
+|R script | DBSCAN.R
+|------------ | -------------
+|Input data | mtgenes.RData , mtgenes_distances.RData 
+|Output data | DBSCAN plots
+|Package Dependencies | "dbscan" , "fpc" , "factoextra"
+|Summary |
+---------------
