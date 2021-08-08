@@ -5,9 +5,28 @@ In Unsupervised approach, the machine learning algorithm takes as input only the
 
 Description of the R scripts
 ---------------
-1. preparation binary matrices
-
-R scripts | binary_matrix.R
------------- | -------------
-Input data | http://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz
-Output data | 
+1. preparing binary matrices and compute sil. number   
+|R script | binary_matrix.R
+|------------ | -------------
+|Input data | http://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz  ??
+|Output data | compounds_genes matrix & compounds_plants matrix  
+|            | Silhouette number Table for HCA and Kmeans methods in different cluster numbers and distances
+|Package Dependencies | "xlsx" , "e1071"
+|Function Dependencies| mesh2name_functon.R , silhouette_functions.R
+|Summary | 
+---------------
+2. visualizing HCA dendrogram   
+|R script | HCA.R
+|------------ | -------------
+|Input data | mtgenes.RData , mtgenes_distances.RData , final_list.RData
+|Output data | HCA dendrogram , compounds in each cluster in HCA method
+|Package Dependencies | "cluster" , "ggplot2" , "factoextra"
+|Summary | 
+----------------
+3. visualizing Kmeans plot  
+|R script | Kmeans.R
+|------------ | -------------
+|Input data | mtgenes.RData , mtgenes_distances.RData , final_list.RData
+|Output data | Kmeans plot , compounds in each cluster in Kmeans method  
+|Package Dependencies | "ggplot2" , "factoextra" , "purrr" , "cluster"
+|Summary |
