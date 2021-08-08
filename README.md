@@ -1,4 +1,13 @@
 Unsupervised Machine Learning
 ===============
 The field of machine learning is concerned with the development and application of computer algorithms that improve with experience. Thus, for example, in genomics machine learning can be used to “learn” how to compare and classify compounds which have interactions between genes.  
-In Unsupervised approach, the machine learning algorithm takes as input only the unlabeled data and the desired number of different labels to assign.
+In Unsupervised approach, the machine learning algorithm takes as input only the unlabeled data and the desired number of different labels to assign.  
+
+Description of the R scripts
+---------------
+1. preparation binary matrices
+
+R scripts | binary_matrix.R
+------------ | -------------
+Input data | http://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz
+Output data | 
