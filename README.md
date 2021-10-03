@@ -10,7 +10,7 @@ Description of the R scripts
 
 |R script | [binary_matrix.R](https://github.com/parnazM/Machine-Learning/blob/master/Scripts/binary_matrix.R)
 |------------ | -------------
-|Input data | http://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz  ??
+|Input data | http://ctdbase.org/reports/CTD_chem_gene_ixns.csv.gz  
 |Output data | compounds_genes matrix & compounds_plants matrix
 |            | Silhouette number Table for HCA and Kmeans methods in different cluster numbers and distances
 |Package Dependencies | "xlsx" , "e1071"
