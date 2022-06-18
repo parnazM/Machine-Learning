@@ -15,7 +15,6 @@ Description of the R scripts
 |            | Silhouette number Table for HCA and Kmeans methods in different cluster numbers and distances
 |Package Dependencies | "xlsx" , "e1071"
 |Function Dependencies| mesh2name_functon.R , silhouette_functions.R
-|Summary | 
 ---------------
 **2. visualizing HCA dendrogram**   
 
@@ -24,7 +23,6 @@ Description of the R scripts
 |Input data | mtgenes.RData , mtgenes_distances.RData , final_list.RData
 |Output data | HCA dendrogram , compounds in each cluster in HCA method
 |Package Dependencies | "cluster" , "ggplot2" , "factoextra"
-|Summary | 
 ----------------
 **3. visualizing Kmeans plot**
 
@@ -33,7 +31,6 @@ Description of the R scripts
 |Input data | mtgenes.RData , mtgenes_distances.RData , final_list.RData
 |Output data | Kmeans plot , compounds in each cluster in Kmeans method  
 |Package Dependencies | "ggplot2" , "factoextra" , "purrr" , "cluster"
-|Summary |
 ---------------
 **4. finding best distance and dimensions in Kohonen method and visualizing plot**
 
@@ -43,7 +40,6 @@ Description of the R scripts
 |Output data | Kohonen plot , heatmap som , compounds in each cluster(cell) in Kohonen method  
 |Package Dependencies | "Kohonen" 
 |Function Dependencies| kohonen_silhouette_function.R
-|Summary |
 ---------------
 **5. trying DBSCAN method for our data**
 
@@ -52,5 +48,4 @@ Description of the R scripts
 |Input data | mtgenes.RData , mtgenes_distances.RData 
 |Output data | DBSCAN plots
 |Package Dependencies | "dbscan" , "fpc" , "factoextra"
-|Summary |
 ---------------
